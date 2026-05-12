@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #000000; /* Deep black for text and buttons */
+    --accent-color: #6366f1;  /* Subtle indigo for tags/links */
+    --bg-light: #ffffff;
+    --bg-gray: #f9f9f9;
+    --text-muted: #666666;
+    --border-subtle: #eeeeee;
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--primary-color);
+    background-color: var(--bg-light);
+    line-height: 1.5;
+}
+
+/* Typography matching image_827a12.jpg */
+h1 { font-size: 3rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem; }
+p { color: var(--text-muted); font-size: 1.1rem; }
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    align-items: center;
+}
+
+nav ul { display: flex; list-style: none; gap: 2.5rem; }
+nav a { text-decoration: none; color: var(--primary-color); font-size: 0.9rem; font-weight: 500; }
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 8rem 20%;
+}
+
+.hero .status-tag {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.btn-black {
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btn-outline {
+    border: 1px solid #ddd;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Bento-style Interests Grid */
+.interests-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    padding: 0 10% 5rem;
+}
+
+.interest-card {
+    background: var(--bg-gray);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+}
+
+.interest-card.dark {
+    background: #0a0a0b;
+    color: white;
+}
+
+.interest-card.dark p { color: #999; }
+
+/* Career Timeline (About Page) */
+.career-row {
+    display: grid;
+    grid-template-columns: 150px 1fr 2fr;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.career-date { font-weight: 600; color: #888; }
+.career-title h3 { font-size: 1.1rem; margin-bottom: 0.2rem; }
+.career-title p { font-size: 0.9rem; }
